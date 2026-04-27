@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-weiss: #ffffff;
+  --color-mint: #6fcfb5;
+  --color-mint-soft: #e8f6f1;
+  --color-rot: #e63946;
+  --color-rot-soft: #fce4e6;
+  --color-creme-soft: #faf7f2;
+  --color-schokolade: #2b2118;
+}
+
+html,
+body {
+  background-color: var(--color-weiss);
+  color: var(--color-schokolade);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.25em] text-schokolade/60;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-schokolade px-7 py-3 font-sans text-sm font-medium text-weiss shadow-sm transition-all duration-300 ease-soft-out hover:scale-[1.03] hover:bg-schokolade/90;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-schokolade/20 bg-weiss/60 px-6 py-3 font-sans text-sm font-medium text-schokolade backdrop-blur-md transition-all duration-300 ease-soft-out hover:scale-[1.03] hover:bg-mint-soft;
+  }
+}
+
+::selection {
+  background-color: var(--color-mint);
+  color: var(--color-schokolade);
+}
+
+/* Reveal-Initialzustand für GSAP-Animationen */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: transform, opacity;
+}

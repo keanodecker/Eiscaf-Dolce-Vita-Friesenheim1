@@ -63,9 +63,6 @@ export default function KontaktPage() {
 
             {/* Schnell-Buttons */}
             <div className="mt-10 flex flex-wrap gap-3">
-              <a href={siteConfig.contact.phoneLink} className="btn-primary">
-                Jetzt anrufen
-              </a>
               <a
                 href={siteConfig.contact.whatsappLink}
                 target="_blank"

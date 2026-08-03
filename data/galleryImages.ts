@@ -40,8 +40,8 @@ export const galleryImages: GalleryImage[] = [
   { id: "drink-5", src: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd", alt: "Frischer Smoothie mit Beeren", category: "getraenke" },
   { id: "drink-6", src: "https://images.unsplash.com/photo-1497636577773-f1231844b336", alt: "Limonade mit Minze und Zitrone", category: "getraenke" },
   { id: "drink-7", src: "https://images.unsplash.com/photo-1544145945-f90425340c7e", alt: "Heiße Schokolade mit Sahne", category: "getraenke" },
-  { id: "drink-8", src: "https://images.unsplash.com/photo-1558122104-355edad709f6", alt: "Eistee mit Zitrone", category: "getraenke" },
-  { id: "drink-9", src: "https://images.unsplash.com/photo-1481671703460-040cb8a2d909", alt: "Iced Latte mit Karamell", category: "getraenke" },
+  { id: "drink-8", src: "https://images.unsplash.com/photo-1541658016709-82535e94bc69", alt: "Italienischer Aperitif mit Orangenscheibe", category: "getraenke" },
+  { id: "drink-9", src: "https://images.unsplash.com/photo-1551024709-8f23befc6f87", alt: "Italienische Kaffeespezialität mit Latte Art", category: "getraenke" },
 ];
 
 export const galleryFilters: { id: GalleryCategory; label: string; emoji: string }[] = [

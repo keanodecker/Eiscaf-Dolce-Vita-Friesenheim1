@@ -3,7 +3,13 @@
     "allow": [
       "Bash(npm install *)",
       "Bash(npx tsc *)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git push *)",
+      "Bash(rm C:/Eisdiele/components/sections/PinnedGallerySection.tsx)",
+      "Bash(rm -rf .next)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
